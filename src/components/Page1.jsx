@@ -35,7 +35,7 @@ function Page1() {
               I'm Tanmay Agarwal
             </motion.h1>
           </div>
-          <div className="sm:w-[60rem] w-[80vw] sm:h-[7rem] h-[5vh] sm:pl-32" id="part2">
+          <div className="sm:w-[60rem] w-[80vw] sm:h-[7rem] h-[5vh] sm:pl-32 pl-10" id="part2">
             <motion.h1
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 0.8 }}
