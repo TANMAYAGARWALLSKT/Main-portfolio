@@ -20,7 +20,7 @@ function Page1() {
           id="mian"
         >
           <div
-            className=" sm:w-[60rem] w-[40vw] sm:h-[7rem] h-[8vh] overflow-hidden"
+            className=" sm:w-[60rem] w-[80vw] sm:h-[7rem] h-[5vh] overflow-hidden"
             id="part1"
           >
             <motion.h1  
@@ -35,7 +35,7 @@ function Page1() {
               I'm Tanmay Agarwal
             </motion.h1>
           </div>
-          <div className="sm:w-[60rem] w-[40vw] sm:h-[7rem] h-[8vh] sm:pl-32" id="part2">
+          <div className="sm:w-[60rem] w-[80vw] sm:h-[7rem] h-[5vh] sm:pl-32" id="part2">
             <motion.h1
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 0.8 }}
