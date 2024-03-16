@@ -18,12 +18,12 @@ function Page2() {
           id="div"
         >
           <Marquee className="overflow-hidden font-bold flex  tracking-wider font-mono opacity-20  ">
-            <h1 className="outfituniquifier p-10 border border-e-2">MY WORK</h1>
-            <h1 className="outfituniquifier p-10 border border-e-2">MY WORK</h1>
-            <h1 className="outfituniquifier p-10 border border-e-2">MY WORK</h1>
-            <h1 className="outfituniquifier p-10 border border-e-2">MY WORK</h1>
-            <h1 className="outfituniquifier p-10 border border-e-2">MY WORK</h1>
-            <h1 className="outfituniquifier p-10 border border-e-2">MY WORK</h1>
+            <h1 className="outfituniquifier p-3 border border-e-2">MY WORK</h1>
+            <h1 className="outfituniquifier p-3 border border-e-2">MY WORK</h1>
+            <h1 className="outfituniquifier p-3 border border-e-2">MY WORK</h1>
+            <h1 className="outfituniquifier p-3 border border-e-2">MY WORK</h1>
+            <h1 className="outfituniquifier p-3 border border-e-2">MY WORK</h1>
+            <h1 className="outfituniquifier p-3 border border-e-2">MY WORK</h1>
           </Marquee>
         </motion.div>
       </div>

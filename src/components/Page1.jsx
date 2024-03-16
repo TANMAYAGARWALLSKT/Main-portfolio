@@ -23,7 +23,7 @@ function Page1() {
             className=" w-[60rem] h-[7rem] overflow-hidden"
             id="part1"
           >
-            <motion.h1  className="text-zinc-300 "
+            <motion.h1  
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 0.8 }}
               transition={{
@@ -35,7 +35,7 @@ function Page1() {
               I'm Tanmay Agarwal
             </motion.h1>
           </div>
-          <div className=" w-[80rem] pl-32" id="part2">
+          <div className=" w-[80rem] sm:pl-32 pl-12" id="part2">
             <motion.h1
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 0.8 }}
