@@ -16,7 +16,7 @@ function Page1() {
         {/* <BackgroundGradientAnimation className="w-screen h-screen absolute overflow-hidden " /> */}
 
         <div
-          className="absolute flex flex-wrap justify-center items-center  sm:text-8xl text-2xl outfituniquifier text-zinc-300"
+          className="absolute flex sm: p-3 flex-wrap justify-center items-center  sm:text-8xl text-2xl outfituniquifier text-zinc-300"
           id="mian"
         >
           <div
@@ -35,7 +35,7 @@ function Page1() {
               I'm Tanmay Agarwal
             </motion.h1>
           </div>
-          <div className="sm:w-[60rem] w-[80vw] sm:h-[7rem] h-[5vh] sm:pl-32 pl-10" id="part2">
+          <div className="sm:w-[60rem] w-[80vw] sm:h-[7rem] h-[5vh] sm:pl-32 pl-12" id="part2">
             <motion.h1
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 0.8 }}
