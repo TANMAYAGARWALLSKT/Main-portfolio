@@ -14,10 +14,10 @@ function Page2() {
     >
       <div className="flex h-[23vh] overflow-hidden" id="text">
         <motion.div
-          className="flex flex-wrap mt-10  h-48 w-screen sm:text-9xl text-4xl font-extrabold gap-10 "
+          className="flex flex-wrap sm:mt-10 mt-5  h-48 w-screen sm:text-9xl text-4xl font-extrabold gap-10 "
           id="div"
         >
-          <Marquee className="overflow-hidden font-bold flex gap-10 tracking-wider font-mono opacity-20  ">
+          <Marquee className="overflow-hidden font-bold flex  tracking-wider font-mono opacity-20  ">
             <h1 className="outfituniquifier p-10 border border-e-2">MY WORK</h1>
             <h1 className="outfituniquifier p-10 border border-e-2">MY WORK</h1>
             <h1 className="outfituniquifier p-10 border border-e-2">MY WORK</h1>
