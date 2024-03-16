@@ -2,44 +2,55 @@ import React from "react";
 import { BackgroundBeams } from "../components/ui/background-beams";
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
 import { motion } from "framer-motion";
+import "../App.css";
 
 function Page1() {
   return (
-    <div className="bg-black w-screen h-screen">
-      <div className="bg-black w-screen h-screen overflow-hidden" id="overlay">
-        <BackgroundBeams className="bg-transparent indent-3 " />
-        <BackgroundGradientAnimation />
-      </div>
+    <section  >
       <div
-        className="absolute top-[50%] left-[50%] flex flex-wrap translate-x-[-50%] overflow-hidden translate-y-[-50%] text-zinc-200 text-6xl font-mono font-bold opacity-40"
-        id="mian"
+          data-scroll
+          // data-scroll-speed="10"/
+        className=" bg-black w-screen h-[90vh]  flex items-center justify-center fixed "
       >
-        <div className=" w-[40rem] h-[4rem] overflow-hidden" id="part1">
-          <motion.h1
-           
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 1,delay:0.4,
-            }}
+        <BackgroundBeams />
+        {/* <BackgroundGradientAnimation className="w-screen h-screen absolute overflow-hidden " /> */}
+
+        <div
+          className="absolute  sm:text-8xl outfituniquifier text-zinc-300"
+          id="mian"
+        >
+          <div
+            className=" w-[60rem] h-[7rem] overflow-hidden"
+            id="part1"
           >
-            I'm Tanmay Agarwal
-          </motion.h1>
+            <motion.h1  className="text-zinc-300 "
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 0.8 }}
+              transition={{
+                duration: 1,
+                delay: 0.8,
+                ease: "easeInOut",
+              }}
+            >
+              I'm Tanmay Agarwal
+            </motion.h1>
+          </div>
+          <div className=" w-[80rem] pl-32" id="part2">
+            <motion.h1
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 0.8 }}
+              transition={{
+                duration: 1,
+                delay: 0.8,
+                ease: "easeInOut",
+              }}
+            >
+              Front-End Developer .
+            </motion.h1>
+          </div>
         </div>
-        <motion.div className="mb-10 w-auto pl-32" id="part2">
-          <motion.h1
-           
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 1, delay:0.4,
-            }}
-          >
-            Front-End Developer .
-          </motion.h1>
-        </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

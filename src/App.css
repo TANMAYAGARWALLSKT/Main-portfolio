@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.outfituniquifier {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  /* font-style: ; */
+}
+::-webkit-scrollbar {
+  display: none;
+  background: transparent;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  display: none;
+  border-radius: 500px;
+  width: 10px;
+  height: 200px;
+}
+::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+.circle {
+  background-color:rgb(255,255,255) ;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.6999592073157388) 19%,
+    rgba(194, 194, 196, 1) 94%
+  );
+}

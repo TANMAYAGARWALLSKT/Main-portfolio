@@ -60,12 +60,12 @@ export const BackgroundBeams = React.memo(
     return (
       <div
         className={cn(
-          "absolute  h-full w-full inset-0  [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center",
+          "absolute  overflow-hidden  h-full w-full inset-0  [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center ",
           className
         )}
       >
         <svg
-          className=" z-0 h-full w-full pointer-events-none absolute "
+          className="overflow-hidden z-0 h-screen w-screen pointer-events-none absolute"
           width="100%"
           height="100%"
           viewBox="0 0 696 316"
@@ -90,7 +90,7 @@ export const BackgroundBeams = React.memo(
           ))}
           <defs>
             {paths.map((path, index) => (
-              <motion.linearGradient
+              <motion.linearGradient 
                 id={`linearGradient-${index}`}
                 x1="10%"
                 x2="10%"

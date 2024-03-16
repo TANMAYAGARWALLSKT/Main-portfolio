@@ -2,21 +2,22 @@
 import { cn } from "../lib/cn";
 import { useEffect, useRef, useState } from "react";
 
-export const BackgroundGradientAnimation = ({
-  gradientBackgroundStart = "rgba(108, 0, 162,0)",
-  gradientBackgroundEnd = "rgba(0, 17, 82,0.1)",
-  firstColor = "18, 113, 255",
-  secondColor = "221, 74, 255",
-  thirdColor = "100, 220, 255",
-  fourthColor = "200, 50, 50",
-  fifthColor = "180, 180, 50",
-  pointerColor = "140, 100, 255",
-  size = "80%",
-  blendingValue = "hard-light",
-  children,
-  className,
-  interactive = true,
-  containerClassName,
+export const BackgroundGradientAnimation = (
+  {
+    gradientBackgroundStart = "rgba(0, 0, 5,0.01)",
+    gradientBackgroundEnd = "rgba(12, 16, 23,0.01)",
+    firstColor = "37, 36, 34",
+    secondColor = "	37, 36, 34",
+    thirdColor = "37, 36, 34",
+    fourthColor = "37, 36, 34",
+    fifthColor = "37, 36, 34",
+    pointerColor = "235, 94, 40",
+    size = "100%",
+    blendingValue = "hard-light",
+    children,
+    className,
+    interactive = true,
+    containerClassName
 }: {
   gradientBackgroundStart?: string;
   gradientBackgroundEnd?: string;
@@ -93,7 +94,7 @@ export const BackgroundGradientAnimation = ({
         containerClassName
       )}
     >
-      <svg className="hidden">
+      <svg className="hidden overflow-hidden">
         <defs>
           <filter id="blurMe">
             <feGaussianBlur
@@ -111,56 +112,56 @@ export const BackgroundGradientAnimation = ({
           </filter>
         </defs>
       </svg>
-      <div className={cn("", className)}>{children}</div>
+      <div className={cn("overflow-hidden ", className)}>{children}</div>
       <div
         className={cn(
-          "gradients-container h-full w-full blur-lg opacity-15",
-          isSafari ? "blur-3xl" : "[filter:url(#blurMe)_blur(60px)]"
+          "overflow-hidden gradients-container h-full w-full blur-lg",
+          isSafari ? "blur-2xl" : "[filter:url(#blurMe)_blur(40px)]"
         )}
       >
         <div
           className={cn(
-            `absolute [background:radial-gradient(circle_at_center,_var(--first-color)_0,_var(--first-color)_50%)_no-repeat]`,
-            `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
-            `[transform-origin:center_center]`,
-            `animate-first`,
-            `opacity-100`
+            `overflow-hidden absolute [background:radial-gradient(circle_at_center,_var(--first-color)_0,_var(--first-color)_50%)_no-repeat]`,
+            `overflow-hidden [mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
+            `overflow-hidden [transform-origin:center_center]`,
+            `overflow-hidden animate-first`,
+            `overflow-hidden opacity-100`
           )}
         ></div>
         <div
           className={cn(
-            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--second-color),_0.8)_0,_rgba(var(--second-color),_0)_50%)_no-repeat]`,
-            `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
-            `[transform-origin:calc(50%-400px)]`,
-            `animate-second`,
-            `opacity-100`
+            `overflow-hidden absolute [background:radial-gradient(circle_at_center,_rgba(var(--second-color),_0.8)_0,_rgba(var(--second-color),_0)_50%)_no-repeat]`,
+            `overflow-hidden [mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
+            `overflow-hidden [transform-origin:calc(50%-400px)]`,
+            `overflow-hidden animate-second`,
+            `overflow-hidden opacity-100`
           )}
         ></div>
         <div
           className={cn(
-            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--third-color),_0.8)_0,_rgba(var(--third-color),_0)_50%)_no-repeat]`,
-            `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
-            `[transform-origin:calc(50%+400px)]`,
-            `animate-third`,
-            `opacity-100`
+            `overflow-hidden absolute [background:radial-gradient(circle_at_center,_rgba(var(--third-color),_0.8)_0,_rgba(var(--third-color),_0)_50%)_no-repeat]`,
+            `overflow-hidden [mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
+            `overflow-hidden [transform-origin:calc(50%+400px)]`,
+            `overflow-hidden animate-third`,
+            `ooverflow-hidden pacity-100`
           )}
         ></div>
         <div
           className={cn(
-            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--fourth-color),_0.8)_0,_rgba(var(--fourth-color),_0)_50%)_no-repeat]`,
-            `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
-            `[transform-origin:calc(50%-200px)]`,
-            `animate-fourth`,
-            `opacity-70`
+            `overflow-hidden absolute [background:radial-gradient(circle_at_center,_rgba(var(--fourth-color),_0.8)_0,_rgba(var(--fourth-color),_0)_50%)_no-repeat]`,
+            `overflow-hidden [mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
+            `overflow-hidden [transform-origin:calc(50%-200px)]`,
+            `overflow-hidden animate-fourth`,
+            `overflow-hidden opacity-70`
           )}
         ></div>
         <div
           className={cn(
-            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--fifth-color),_0.8)_0,_rgba(var(--fifth-color),_0)_50%)_no-repeat]`,
-            `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
-            `[transform-origin:calc(50%-800px)_calc(50%+800px)]`,
-            `animate-fifth`,
-            `opacity-100`
+            `overflow-hidden  absolute [background:radial-gradient(circle_at_center,_rgba(var(--fifth-color),_0.8)_0,_rgba(var(--fifth-color),_0)_50%)_no-repeat]`,
+            `overflow-hidden  [mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
+            `overflow-hidden  [transform-origin:calc(50%-800px)_calc(50%+800px)]`,
+            `overflow-hidden  animate-fifth`,
+            `overflow-hidden  opacity-100`
           )}
         ></div>
 
@@ -169,8 +170,8 @@ export const BackgroundGradientAnimation = ({
             ref={interactiveRef}
             onMouseMove={handleMouseMove}
             className={cn(
-              `absolute [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
-              `[mix-blend-mode:var(--blending-value)] w-full h-full -top-1/2 -left-1/2`,
+              `overflow-hidden absolute [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
+              `overflow-hidden  [mix-blend-mode:var(--blending-value)] w-full h-full -top-1/2 -left-1/2`,
               `opacity-70`
             )}
           ></div>
