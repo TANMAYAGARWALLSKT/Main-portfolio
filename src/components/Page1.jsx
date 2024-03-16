@@ -16,7 +16,7 @@ function Page1() {
         {/* <BackgroundGradientAnimation className="w-screen h-screen absolute overflow-hidden " /> */}
 
         <div
-          className="absolute flex justify-center items-center  sm:text-8xl text-4xl outfituniquifier text-zinc-300"
+          className="absolute flex justify-center items-center  sm:text-8xl text-2xl outfituniquifier text-zinc-300"
           id="mian"
         >
           <div
