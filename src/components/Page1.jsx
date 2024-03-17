@@ -10,7 +10,7 @@ function Page1() {
       <div
         data-scroll
         // data-scroll-speed="10"/
-        className=" bg-black w-screen h-[90vh]  flex items-center justify-center fixed "
+        className=" w-screen h-[90vh]  flex items-center justify-center fixed "
       >
         <BackgroundBeams />
         {/* <BackgroundGradientAnimation className="w-screen h-screen absolute overflow-hidden " /> */}
