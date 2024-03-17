@@ -7,9 +7,7 @@ import Cards from "./Cards";
 function Page2() {
   return (
     <div
-    // 08111a
-      // data-scroll
-      // data-scroll-speed=""
+   
       data-scroll
       className="w-screen sm:h-[90vh] h-[80vh] p-1 bg-[#08111a] text-zinc-200 rounded-[3rem]  overflow-hidden relative sm:top-[90vh] top-[85vh] "
     >
