@@ -13,7 +13,7 @@ function Page2() {
     >
       <div className="flex h-[25vh] overflow-hidden" id="text">
         <motion.div
-          className="flex flex-wrap lg:mt-10 sm:-mt-2 md:-mt-10 sm:h-[25vh] md:h-[25vh] lg-[25] w-screen lg:text-8xl text-5xl md:text-5xl font-extrabold gap-10 "
+          className="flex flex-wrap lg:mt-10 sm:-mt-2 md:-mt-10 sm:h-[25vh] md:h-[25vh] lg-[25vh] w-screen lg:text-8xl text-5xl md:text-5xl font-extrabold gap-10 "
           id="div"
         >
           <Marquee className="overflow-hidden font-bold flex  tracking-wider font-mono opacity-20  ">
