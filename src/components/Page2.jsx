@@ -14,7 +14,7 @@ function Page2() {
       className="w-screen sm:h-[90vh] h-[80vh] p-1 bg-[#08111a] text-zinc-200 rounded-[3rem]  overflow-hidden relative sm:top-[90vh] top-[85vh] "
     >
       <div className="flex h-[23vh] overflow-hidden" id="text">
-        <motion.div
+        <motion.divf
           className="flex flex-wrap lg:mt-10 sm:mt-2 md:mt-10  h-56 w-screen lg:text-8xl sm:text-5xl md:text-5xl font-extrabold gap-10 "
           id="div"
         >
