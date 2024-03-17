@@ -20,7 +20,7 @@ function Page1() {
           id="mian"
         >
           <div
-            className=" w-[80vw] lg:h-[15vh] sm:h-[10vh] md:h-[10vh] overflow-hidden "
+            className=" w-[80vw] lg:h-[15vh] sm:h-[12vh] md:h-[12vh]  overflow-hidden "
             id="part1"
           >
             <motion.h1
