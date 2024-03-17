@@ -16,11 +16,11 @@ function Page1() {
         {/* <BackgroundGradientAnimation className="w-screen h-screen absolute overflow-hidden " /> */}
 
         <div
-          className="absolute flex justify-center left-[14vw] content-center flex-wrap w-screen h-screen  text-[5vw] outfituniquifier overflow-hidden text-zinc-300"
+          className="absolute flex justify-center left-[14vw] content-center flex-wrap w-screen h-screen  sm:text-[5vw] text-[6vw] outfituniquifier overflow-hidden text-zinc-300"
           id="mian"
         >
           <div
-            className=" w-[80vw] h-[20vh]   overflow-hidden relative bottom-0"
+            className=" w-[80vw] h-[20vh] overflow-hidden relative bottom-0"
             id="part1"
           >
             <motion.h1
